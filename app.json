@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "pdm-lesson-app-publish",
+    "name": "My App",
     "slug": "pdm-lesson-app-publish",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "versionCode": 1,
+      "package": "com.andresjesse.pdmlessonapppublish"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "87c92afc-bf60-424c-a988-a7f234a31b6d"
+      }
     }
   }
 }
