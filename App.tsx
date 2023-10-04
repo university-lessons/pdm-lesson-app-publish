@@ -1,20 +1,16 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
+import WebView from "react-native-webview";
+import Constants from "expo-constants";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>PDM Lesson - Publish App</Text>
-      <StatusBar style="auto" />
-    </View>
+    <WebView style={styles.container} source={{ uri: "https://expo.dev" }} />
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    marginTop: Constants.statusBarHeight,
   },
 });
